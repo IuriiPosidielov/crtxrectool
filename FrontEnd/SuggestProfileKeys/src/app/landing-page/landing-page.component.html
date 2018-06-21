@@ -1,0 +1,34 @@
+<sc-page [showNav]="'false'">
+  <div scPageAppHeader>
+    <sc-application-header [text]="'Suggest Profile Keys' | translate"></sc-application-header>
+  </div>
+  <article scPageContent>
+	<div class="panel panel-primary filterable">
+				<table class="table table-striped table-hover">
+					<thead>
+						<tr>
+							<th style="width: 4.1%; width:50px;">&nbsp;</th>
+							<th>Tags</th>
+						</tr>
+					</thead>
+					<tbody *ngIf="recState">
+							<tr *ngFor="let profilekey of recState.ProfileKeys; let i = index" (click)="changeCheckbox($event, i); chkbx.checked=this.checked[i];">
+								<td style="width: 4.1%; width:50px;">
+									<div class="checkbox radio-margin">
+										<label>
+											<input #chkbx type="checkbox" value="{{ profilekey.ProfileKeyId }}" />
+											<span  class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+								</td>
+								<td>{{ profilekey.ProfileKeyName }}</td>
+							</tr>
+						</tbody>
+				</table>
+			</div>
+			<div class="modal-footer">
+        	<button (click)="this.saveProfileKeys()"  type="button" class="btn btn-primary">Save changes</button>
+        	<button onclick="window.top.dialogClose();" type="button" class="btn btn-secondary">Close</button>
+      </div>
+  </article>
+</sc-page>

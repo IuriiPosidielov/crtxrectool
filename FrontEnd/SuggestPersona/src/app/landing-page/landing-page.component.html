@@ -1,0 +1,99 @@
+<sc-page [showNav]="isNavigationShown">
+  <div scPageAppHeader>
+    <sc-application-header [text]="'Suggest Persona' | translate"></sc-application-header>
+  </div>
+  <article scPageContent>
+	<div class="row margin-top-50">
+		<div class="col-md-12">
+			<div class="panel panel-primary filterable">
+				<table class="table table-striped table-hover">
+					<thead>
+						<th style="width: 4.1%; width:50px;">&nbsp;
+						</th>
+						<th style="width: 24%; text-align: center;">
+							Name
+						</th>
+						<th style="width: 24%; text-align: center;">
+							Description
+						</th>
+						<th style="width: 24%; text-align: center;">
+							Persona
+						</th>
+						<th style="width: 24%">
+							Profile Keys
+						</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td style="width: 4.1%; width:50px;">
+								<div class="checkbox radio-margin">
+									<label>
+										<input type="checkbox" value="">
+										<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+									</label>
+								</div>
+							</td>
+							<td style="width: 24%">Tammie</td>
+							<td style="width: 24%">Tammie likes bike and adventure</td>
+							<td style="width: 24%"><img class="rounded mx-auto d-block img-thumbnail" src="./Tammie.png" /></td>
+							<td style="width: 24%">
+									<ul class="list-group" class="form-control">
+									<li class="list-group-item">Bike</li>
+									<li class="list-group-item">Fitness</li>
+									<li class="list-group-item">Adventure</li>
+									</ul>
+							</td>
+						</tr>
+						<tr>
+							<td style="width: 4.1%; width:50px;">
+								<div class="checkbox radio-margin">
+									<label>
+										<input type="checkbox" value="">
+										<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+									</label>
+								</div>
+							</td>
+							<td style="width: 24%">Ian</td>
+							<td style="width: 24%">Ian, the family guy</td>							
+							<td style="width: 24%"><img class="rounded mx-auto d-block img-thumbnail" src="./Ian.png" /></td>
+							<td style="width: 24%">
+									<ul class="list-group" class="form-control">
+									<li class="list-group-item">Family</li>
+									<li class="list-group-item">Fun</li>
+								<li class="list-group-item">Swimming</li>
+									<li class="list-group-item">Structured Vacation</li>
+									</ul>
+							</td>
+						</tr>
+						<tr>
+							<td style="width: 4.1%; width:50px;">
+								<div class="checkbox radio-margin">
+									<label>
+										<input type="checkbox" value="">
+										<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+									</label>
+								</div>
+							</td>
+							<td style="width: 24%">Christian</td>
+							<td style="width: 24%">Christian likes to play and watch the soccer</td>														
+							<td style="width: 24%"><img class="rounded mx-auto d-block img-thumbnail" src="./Christian.png" /></td>
+							<td style="width: 24%">
+									<ul class="list-group" class="form-control">
+									<li class="list-group-item">Luxury</li>
+									<li class="list-group-item">Soccer</li>
+									<li class="list-group-item">Fitness</li>
+									<li class="list-group-item">Sightseeing</li>
+									</ul>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+        <div class="modal-footer">
+        	<button onclick="window.top.dialogClose();" type="button" class="btn btn-primary">Save changes</button>
+        	<button onclick="window.top.dialogClose();" type="button" class="btn btn-secondary">Close</button>
+        </div>
+  </article>
+</sc-page>
